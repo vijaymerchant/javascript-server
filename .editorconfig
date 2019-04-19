@@ -1,0 +1,67 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+# Notes :
+# Entries in square brackets ([]) are patterns of files the following rules should apply to. [Makefile] is a simple pattern 
+#  with no wildcards that matches the name "Makefile" exactly. It refers to common makefiles.
+# The end_of_line entry refers to the character(s) that is used to signify an end of a line.
+#  LF stands for Line Feed (\n)
+#  CR stands for Carriage Return (\r)
+#  CRLF is simply CR followed by LF (i.e., \r\n)
+#--------------------
+# Properties :
+#  indent_style = {space|tab}
+#  indent_size = {4|tab}
+#  tab_width = 2
+#  end_of_line = {cr|lf|crlf}
+#  charset = {utf-8|utf-16be|utf-16le|latin1}
+#  trim_trailing_whitespace = false
+#  insert_final_newline = true
+#  max_line_length = 80
+# ------------------
+# Example :
+# top-most EditorConfig file
+# root = true
+# 
+# # Unix-style newlines with a newline ending every file
+# [*]
+# end_of_line = lf
+# insert_final_newline = true
+# 
+# # 4 space indentation
+# [*.py]
+# indent_style = space
+# indent_size = 4
+# 
+# # Tab indentation (no size specified)
+# [*.js]
+# indent_style = tab
+# 
+# # Indentation override for all JS under lib directory
+# [lib/**.js]
+# indent_style = space
+# indent_size = 2
+# 
+# # Matches the exact files either package.json or .travis.yml
+# [{package.json,.travis.yml}]
+# indent_style = space
+# indent_size = 2
+# -----------------------------------
+
+
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+
+[*.txt]
+indent_style = tab
+indent_size = 4
+
+[*.{diff,md}]
+trim_trailing_whitespace = false
