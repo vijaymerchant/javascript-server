@@ -1,5 +1,10 @@
-process.argv.forEach (function equilateral(number){
-let str="", nol=number, space=1;
+
+let number = process.argv[2];
+    
+let str="", nol, space=1;
+if (number>=2 && number <= 10){
+        nol=number;
+
 space = nol-1;
 for (let i=0;i<=nol;i++){
     for (let j=0;j<=space;j++){
@@ -13,4 +18,6 @@ for (let i=0;i<=nol;i++){
     str="";
 }
 }
-)
+else{
+    console.log("Please enter number between 2 to 10")
+}
